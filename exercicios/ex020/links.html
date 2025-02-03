@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: rgb(116, 20, 76);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: rgb(223, 49, 6)
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(255, 17, 0);
+        }
+
+        .especial{
+            background-color: aqua;
+        }
+        .especial::before{
+            content: '-> ';
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando os Links</h1>
+    <ul>
+        <li><a href="http://github.com/fbeaviana" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/@fbeatrizviana" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.croche.com.br/" target="_blank">Site do Croche </a></li>
+    </ul>
+</body>
+</html>

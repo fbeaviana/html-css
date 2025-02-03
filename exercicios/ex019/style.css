@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+    em HTML e ID = em CSS e # - seletor personalizado - unico
+    em  HTML e CLASS = em CSS e . -  para modificar + de 1 
+*/
+
+body {
+    background-color: rgb(176, 236, 176);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(58, 175, 58);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(58, 175, 58);
+    color: white;
+}
+
+h2 {
+    color: rgb(87, 202, 87);
+    
+}
+
+.basico{
+    color: rgb(151, 50, 37);
+    font-weight: bold;
+}
+.intermediario{
+    color: rgb(49, 88, 49);
+}
+.avancado{
+    
+    color: rgb(152, 179, 34);
+}
+.destaque{
+    background-color: rgb(10, 10, 10);
+}
