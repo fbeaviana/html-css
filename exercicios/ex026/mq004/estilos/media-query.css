@@ -2,6 +2,102 @@
 
 /* TODAS DAS DEMAIS MIDIAS */
 
-@media print {
-    
+/* TYPICAL DEVICE BREAKPOINT 
+--------------------------------
+PEQUENAS TELAS: ATE 600PX
+CELULAR: DE 600PX ATE 768PX
+TABLET: 768PX ATE 992PX
+DESKTOP: 992PX ATE 1200PX
+GRANDES TELAS: ACIMA DE 1200PX
+-------------------------------
+*/
+
+/*
+CONF. PARA PEQUENAS TELAS, POREM A CONF. JA ESTA NA PASTA STYLE.CSS
+-----------------------------------------------------------------
+@media screen and (max-width: 600px) {
+
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+-----------------------------------------------------------------
+}*/
+
+@media print { /*IMPRESSAO*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessario pois nao aparece na impressao*/
+    }
+
+    main {
+        width: 80vw;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressao foi feita atraves do site www.github.com/fbeaviana';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#desk { display: none; }
+    img#tv { display: none; }
+
+    }
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    } 
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#desk { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 900px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#desk { display: block; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /*GRANDES TELAS*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#desk { display: none; }
+    img#tv { display: block; }
+}
+
