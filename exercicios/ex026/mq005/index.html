@@ -10,10 +10,10 @@
 <body>
     <header>
         <h1>MIDIAS QUERIES</h1>
-        <span id="iconMENU"   class="material-symbols-outlined">
+        <span id="icMENU" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
-    <nav>
+    <nav id="itens">
         <ul>
             <li><a href="#">Opção 1</a></li>
             <li><a href="#">Opção 2</a></li>
@@ -39,5 +39,15 @@
         </p>
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+           if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+           } else {
+                itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
