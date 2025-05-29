@@ -15,6 +15,7 @@ body{
 p {
     margin-bottom: 10px;
     text-align: justify;
+    margin: 20px;
 }
 
 h1, h2 {
